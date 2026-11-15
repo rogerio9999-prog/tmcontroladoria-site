@@ -64,6 +64,8 @@ Antes de escrever, **liste os arquivos em `posts/`** e não repita temas já cob
 ### Estilo
 
 - Português do Brasil, tom de contador experiente conversando com um dono de empresa: claro, direto, sem juridiquês. Explicar siglas na primeira vez.
+- **Nunca use travessão (— ou –)**, em nenhuma parte do post (título, resumo, texto, fontes). Use vírgula, dois-pontos, parênteses ou ponto final. O texto deve soar escrito por uma pessoa. O `build.py` recusa posts com travessão. O hífen comum (-) em palavras compostas continua permitido.
+- Evite também outros vícios de texto gerado por IA: frases de efeito vazias ("Não é só X, é Y"), listas de três adjetivos, "Em resumo", "Vale ressaltar", "É importante destacar". Prefira frases curtas e concretas.
 - 700 a 1.300 palavras (guia definitivo: até 2.000).
 - Abrir com o problema do leitor, não com definição de dicionário.
 - Use subtítulos `##`, listas curtas, **um exemplo numérico** sempre que houver cálculo e tabelas quando houver comparação.
@@ -71,6 +73,23 @@ Antes de escrever, **liste os arquivos em `posts/`** e não repita temas já cob
 - Quando fizer sentido, mencionar Uberaba ou o Triângulo Mineiro (SEO local), sem forçar.
 - Terminar com um "o que fazer agora" prático. O CTA de WhatsApp já é inserido automaticamente: não repita.
 
+### Revisão final (obrigatória, antes de abrir o PR)
+
+Os posts são **publicados automaticamente ao meio-dia** se ninguém intervier. Por isso, depois de escrever os 5 posts, releia cada um como revisor:
+
+1. Para **cada** número, alíquota, valor, prazo e número de norma citado, confirme na fonte oficial (WebFetch). Se não confirmar, corrija ou reescreva o trecho sem depender do número.
+2. Refaça as contas dos exemplos numéricos com Python.
+3. Confira que cada link em `fontes` abre (WebFetch) e trata do assunto citado.
+4. Classifique o que sobrou em `checagem`:
+   - **Detalhe menor** (ex.: confirmar link alternativo, redação): o post segue normalmente.
+   - **Dúvida relevante** (um número, prazo, regra ou alcance da norma que você não conseguiu confirmar e que pode levar o leitor a erro): marque o post com `rascunho: true`. Ele entra no repositório mas **não aparece no site** até um humano liberar.
+
+Prefira publicar 4 posts sólidos e 1 rascunho a publicar 5 com erro.
+
 ### Pull Request
 
-Título: `Posts de DD/MM/AAAA`. No corpo, para cada post: título, linha editorial, resumo em uma frase e a lista `checagem` copiada do arquivo, para o revisor ir direto aos pontos de risco.
+Título: `Posts de DD/MM/AAAA`. No corpo, para cada post: título, linha editorial, resumo em uma frase, se está **PUBLICÁVEL** ou **RASCUNHO** (e por quê) e a lista `checagem` copiada do arquivo, para o revisor ir direto aos pontos de risco.
+
+### Publicação automática
+
+`.github/workflows/auto-publicar.yml` faz o merge dos PRs `posts/...` todo dia às 12:00 (Brasília), exceto os marcados com a etiqueta `segurar`, os fechados e os que falharam na validação. Posts com `rascunho: true` não aparecem no site; para liberar um, edite o arquivo e mude para `rascunho: false`.

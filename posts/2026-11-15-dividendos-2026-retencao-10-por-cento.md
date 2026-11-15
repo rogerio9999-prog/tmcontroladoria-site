@@ -5,8 +5,8 @@ data: 2026-11-15
 categoria: Pessoa Física
 tags: [dividendos, distribuição de lucros, IRPF, imposto mínimo, Lei 15.270]
 fontes:
-  - Lei nº 15.270/2025 — altera a tributação da renda (isenção até R$ 5 mil e tributação mínima) | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm
-  - Receita Federal — Imposto de Renda | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda
+  - Lei nº 15.270/2025: altera a tributação da renda (isenção até R$ 5 mil e tributação mínima) | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm
+  - Receita Federal: Imposto de Renda | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda
 checagem:
   - Confirmar o link da Lei 15.270/2025 no Planalto
   - Confirmar que a retenção de 10% incide sobre o valor total pago no mês (e não só sobre o excedente)
@@ -14,7 +14,7 @@ checagem:
   - Confirmar se há regulamentação da Receita (IN) publicada em 2026 sobre o tema para citar
 ---
 
-Durante quase 30 anos, lucros e dividendos foram isentos de Imposto de Renda no Brasil. **Em 2026 isso mudou** — não para todo mundo, mas para quem recebe valores altos. A mudança veio na mesma lei que ampliou a isenção do IR para quem ganha até R$ 5 mil por mês, a Lei nº 15.270/2025.
+Durante quase 30 anos, lucros e dividendos foram isentos de Imposto de Renda no Brasil. **Em 2026 isso mudou**, não para todo mundo, mas para quem recebe valores altos. A mudança veio na mesma lei que ampliou a isenção do IR para quem ganha até R$ 5 mil por mês, a Lei nº 15.270/2025.
 
 São duas regras diferentes, que funcionam em momentos diferentes.
 
@@ -36,7 +36,7 @@ O imposto retido não é perdido: ele é uma **antecipação**, compensada na de
 
 ## Regra 2: o imposto mínimo anual (IRPFM)
 
-A segunda regra olha para o ano inteiro. Quem tem **rendimentos totais acima de R$ 600 mil no ano** — somando salário, pró-labore, dividendos, aluguéis e aplicações, inclusive os isentos — passa a ter uma **tributação mínima**:
+A segunda regra olha para o ano inteiro. Quem tem **rendimentos totais acima de R$ 600 mil no ano** (somando salário, pró-labore, dividendos, aluguéis e aplicações, inclusive os isentos) passa a ter uma **tributação mínima**:
 
 - de 0% a 10%, crescendo de forma gradual entre R$ 600 mil e R$ 1,2 milhão por ano;
 - 10% para quem passa de R$ 1,2 milhão.
@@ -52,16 +52,16 @@ Para a maioria dos sócios de pequenas empresas, **nada muda**: quem retira meno
 Quem precisa olhar com cuidado:
 
 - sócios de empresas lucrativas que distribuem lucros em **poucas parcelas grandes** (por exemplo, uma vez por ano);
-- sócios com participação em **várias empresas** — o limite de R$ 50 mil é por empresa pagadora, mas o limite de R$ 600 mil anuais soma tudo;
+- sócios com participação em **várias empresas**: o limite de R$ 50 mil é por empresa pagadora, mas o limite de R$ 600 mil anuais soma tudo;
 - profissionais liberais com renda alta via pessoa jurídica, como médicos e dentistas em clínicas.
 
 ## O que fazer até dezembro
 
-1. **Distribua de forma mensal e planejada.** Manter cada distribuição mensal dentro de R$ 50 mil por sócio evita retenção — desde que haja lucro apurado e escrituração que sustente o valor.
+1. **Distribua de forma mensal e planejada.** Manter cada distribuição mensal dentro de R$ 50 mil por sócio evita retenção, desde que haja lucro apurado e escrituração que sustente o valor.
 2. **Reavalie o pró-labore.** Em alguns casos, especialmente no Simples Nacional, um pró-labore maior também melhora o enquadramento pelo [Fator R](/blog/fator-r-simples-nacional/).
-3. **Mantenha a contabilidade em dia.** Distribuir lucro sem balanço que comprove o resultado pode transformar o valor em rendimento tributável comum — com imposto bem maior que 10%.
+3. **Mantenha a contabilidade em dia.** Distribuir lucro sem balanço que comprove o resultado pode transformar o valor em rendimento tributável comum, com imposto bem maior que 10%.
 4. **Projete o imposto mínimo de 2026** agora, enquanto ainda há meses para ajustar.
 
 ## Uma reforma da renda, não só do consumo
 
-Muito se fala da Reforma Tributária sobre o consumo (CBS e IBS), mas a tributação da renda também mudou. Para quem é sócio de empresa, a forma de retirar dinheiro passou a ser uma decisão tributária, que precisa ser revista todo ano — e não mais um detalhe do fechamento.
+Muito se fala da Reforma Tributária sobre o consumo (CBS e IBS), mas a tributação da renda também mudou. Para quem é sócio de empresa, a forma de retirar dinheiro passou a ser uma decisão tributária, que precisa ser revista todo ano, e não mais um detalhe do fechamento.

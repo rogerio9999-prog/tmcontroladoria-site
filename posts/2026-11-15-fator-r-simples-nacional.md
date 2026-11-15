@@ -13,7 +13,7 @@ checagem:
   - Conferir a estimativa de IRPF sobre o pró-labore adicional com a tabela vigente em 2026
 ---
 
-Se a sua empresa presta serviços intelectuais — consultoria, engenharia, arquitetura, medicina, odontologia, publicidade, tecnologia — existe uma boa chance de ela estar no **Anexo V** do Simples Nacional, que começa com alíquota de 15,5%. E existe uma chance igualmente boa de ela poder ir para o **Anexo III**, que começa em 6%, com um ajuste simples na folha.
+Se a sua empresa presta serviços intelectuais, como consultoria, engenharia, arquitetura, medicina, odontologia, publicidade ou tecnologia, existe uma boa chance de ela estar no **Anexo V** do Simples Nacional, que começa com alíquota de 15,5%. E existe uma chance igualmente boa de ela poder ir para o **Anexo III**, que começa em 6%, com um ajuste simples na folha.
 
 O nome dessa regra é **Fator R**.
 
@@ -38,7 +38,7 @@ Vamos a um caso típico: uma empresa de consultoria com faturamento de **R$ 600 
 | **Alíquota efetiva** | **10,56%** | **17,85%** |
 | Imposto no ano | R$ 63.360 | R$ 107.100 |
 
-São **R$ 43.740 por ano** de diferença — mais de 7 pontos percentuais sobre todo o faturamento.
+São **R$ 43.740 por ano** de diferença, mais de 7 pontos percentuais sobre todo o faturamento.
 
 ## Quanto de folha é preciso
 
@@ -67,4 +67,4 @@ Mesmo no cenário mais caro, a economia líquida fica perto de **R$ 25 mil por a
 
 ## Vale para a sua empresa?
 
-Se a sua empresa presta serviços e paga Anexo V, peça uma simulação. É uma das revisões com melhor retorno que uma pequena empresa pode fazer — e muitas pagam Anexo V há anos sem que ninguém tenha olhado para isso.
+Se a sua empresa presta serviços e paga Anexo V, peça uma simulação. É uma das revisões com melhor retorno que uma pequena empresa pode fazer. E muitas pagam Anexo V há anos sem que ninguém tenha olhado para isso.
