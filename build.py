@@ -261,7 +261,7 @@ def footer() -> str:
         <ul>
           <li><a href="{WHATSAPP}" target="_blank" rel="noopener">(34) 3325-3919</a></li>
           <li><a href="mailto:contabilidade@tmcontroladoria.com.br">contabilidade@tmcontroladoria.com.br</a></li>
-          <li>Praça Rui Barbosa, 300, Sala 30<br>Uberaba/MG</li>
+          <li>Praça Rui Barbosa, 300, Sala 30<br>Uberaba/MG, CEP 38010-240</li>
         </ul>
       </div>
     </div>
