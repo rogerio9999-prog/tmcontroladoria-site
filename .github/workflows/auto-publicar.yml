@@ -1,0 +1,59 @@
+# Publicação automática ao meio-dia (Brasília).
+# Faz o merge dos Pull Requests de posts (branches "posts/...") que:
+#   - não estão marcados com a etiqueta "segurar";
+#   - não estão como rascunho (draft);
+#   - passaram na validação ("Validar posts").
+# Depois dispara o deploy do site.
+# Para barrar um PR: coloque a etiqueta "segurar" nele, ou feche-o.
+# Posts com "rascunho: true" entram no repositório mas NÃO aparecem no site.
+name: Publicar posts ao meio-dia
+
+on:
+  schedule:
+    - cron: "0 15 * * *"   # 15:00 UTC = 12:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Fazer merge dos PRs de posts
+        run: |
+          set -uo pipefail
+          publicou=0
+          prs=$(gh pr list --state open --limit 50 --json number,headRefName,isDraft,labels \
+            --jq '.[] | select(.headRefName | startswith("posts/")) | select(.isDraft | not)
+                  | select([.labels[].name] | index("segurar") | not) | .number')
+          if [ -z "$prs" ]; then
+            echo "Nenhum PR de posts para publicar."
+          fi
+          for n in $prs; do
+            validacao=$(gh pr view "$n" --json statusCheckRollup \
+              --jq '[.statusCheckRollup[] | select(.workflowName == "Validar posts") | .conclusion] | last // "AUSENTE"')
+            if [ "$validacao" != "SUCCESS" ]; then
+              echo "PR #$n não publicado: validação = $validacao"
+              gh pr comment "$n" --body "⚠️ Publicação automática do meio-dia **não** feita: a validação dos posts está como \`$validacao\`. Corrija e faça o merge manualmente." || true
+              continue
+            fi
+            if gh pr merge "$n" --squash --delete-branch; then
+              echo "PR #$n publicado."
+              publicou=1
+            else
+              echo "PR #$n: falha no merge."
+              gh pr comment "$n" --body "⚠️ Publicação automática do meio-dia falhou no merge (provável conflito). Faça o merge manualmente." || true
+            fi
+          done
+          echo "publicou=$publicou" >> "$GITHUB_ENV"
+
+      # Merges feitos pelo token do Actions não disparam o deploy sozinhos; dispara aqui.
+      - name: Atualizar o site
+        if: env.publicou == '1'
+        run: gh workflow run deploy.yml --ref main
