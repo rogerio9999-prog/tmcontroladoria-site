@@ -27,10 +27,9 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      # Site publicado na raiz de tmcontroladoria.com.br. Para publicar numa subpasta,
+      # defina a variável BASE_PATH (ex.: BASE_PATH: /subpasta).
       - run: python build.py
-        env:
-          # Endereço provisório (github.io/tmcontroladoria-site). Remover quando o domínio próprio for ligado.
-          BASE_PATH: /tmcontroladoria-site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
