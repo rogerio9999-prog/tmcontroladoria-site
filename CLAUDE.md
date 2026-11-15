@@ -64,6 +64,8 @@ Antes de escrever, **liste os arquivos em `posts/`** e não repita temas já cob
 ### Estilo
 
 - Português do Brasil, tom de contador experiente conversando com um dono de empresa: claro, direto, sem juridiquês. Explicar siglas na primeira vez.
+- **Nunca use travessão (— ou –)**, em nenhuma parte do post (título, resumo, texto, fontes). Use vírgula, dois-pontos, parênteses ou ponto final. O texto deve soar escrito por uma pessoa. O `build.py` recusa posts com travessão. O hífen comum (-) em palavras compostas continua permitido.
+- Evite também outros vícios de texto gerado por IA: frases de efeito vazias ("Não é só X, é Y"), listas de três adjetivos, "Em resumo", "Vale ressaltar", "É importante destacar". Prefira frases curtas e concretas.
 - 700 a 1.300 palavras (guia definitivo: até 2.000).
 - Abrir com o problema do leitor, não com definição de dicionário.
 - Use subtítulos `##`, listas curtas, **um exemplo numérico** sempre que houver cálculo e tabelas quando houver comparação.

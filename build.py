@@ -148,7 +148,12 @@ def load_posts(incluir_rascunhos: bool) -> list[Post]:
     posts, slugs, erros = [], set(), []
     for path in sorted(POSTS_DIR.glob("*.md")):
         try:
-            meta, body = parse_front_matter(path.read_text(encoding="utf-8"), path)
+            raw = path.read_text(encoding="utf-8")
+            linhas = [str(i) for i, l in enumerate(raw.splitlines(), 1) if "—" in l or "–" in l]
+            if linhas:
+                raise ValueError(f"{path.name}: travessão (— ou –) nas linhas {', '.join(linhas)}. "
+                                 "Reescreva com vírgula, dois-pontos, parênteses ou ponto final.")
+            meta, body = parse_front_matter(raw, path)
             faltando = [k for k in REQUIRED if not meta.get(k)]
             if faltando:
                 raise ValueError(f"{path.name}: faltam os campos {', '.join(faltando)}")
@@ -231,7 +236,7 @@ def footer() -> str:
     <div class="footer-grid">
       <div>
         <a class="brand brand--footer" href="/" aria-label="{SITE_NAME}"><span class="brand-mark">TM<span>.</span></span><span class="brand-name">Controladoria e<br>Soluções Contábeis</span></a>
-        <p style="margin-top:14px;max-width:38ch">TM Controladoria e Soluções Contábeis LTDA — contabilidade, controladoria e assessoria tributária para empresas e pessoas físicas.</p>
+        <p style="margin-top:14px;max-width:38ch">TM Controladoria e Soluções Contábeis LTDA. Contabilidade, controladoria e assessoria tributária para empresas e pessoas físicas.</p>
         <p style="font-size:.85rem"><a href="/feed.xml">Assine o feed RSS do blog</a></p>
       </div>
       <div>
@@ -245,7 +250,7 @@ def footer() -> str:
         <ul>
           <li><a href="{WHATSAPP}" target="_blank" rel="noopener">(34) 3325-3919</a></li>
           <li><a href="mailto:contabilidade@tmcontroladoria.com.br">contabilidade@tmcontroladoria.com.br</a></li>
-          <li>Praça Rui Barbosa, 300 – Sala 30<br>Uberaba/MG</li>
+          <li>Praça Rui Barbosa, 300, Sala 30<br>Uberaba/MG</li>
         </ul>
       </div>
     </div>
@@ -357,7 +362,7 @@ def listing_pages(posts: list[Post], base: str, titulo: str, subtitulo: str,
         cards = "\n".join(post_card(p) for p in lote)
         vazio = '<p class="lead">Nenhum artigo publicado ainda.</p>' if not posts else ""
         path = base if n == 1 else f"{base}pagina/{n}/"
-        sufixo = "" if n == 1 else f" — página {n}"
+        sufixo = "" if n == 1 else f" (página {n})"
         body = f"""<section class="hero hero--blog">
   <div class="wrap">
     <span class="eyebrow">Blog TM Controladoria</span>
@@ -437,12 +442,12 @@ def post_page(p: Post, relacionados: list[Post]) -> str:
       <ul>
 {fontes}
       </ul>
-      <p class="post-disclaimer">Conteúdo informativo, atualizado na data de publicação. Regras tributárias mudam com frequência e cada caso tem particularidades — antes de decidir, fale com um contador.</p>
+      <p class="post-disclaimer">Conteúdo informativo, atualizado na data de publicação. Regras tributárias mudam com frequência e cada caso tem particularidades. Antes de decidir, fale com um contador.</p>
     </aside>
 
     <div class="post-cta">
       <h2>Quer saber como isso afeta a sua empresa?</h2>
-      <p>Conte a sua situação. A gente analisa e diz o que faria — sem proposta genérica.</p>
+      <p>Conte a sua situação. A gente analisa e diz o que faria, sem proposta genérica.</p>
       <a class="btn btn--gold" href="{WHATSAPP}?text={e(quote_wa('Olá! Li o artigo “' + p.titulo + '” no blog e gostaria de conversar.'))}" target="_blank" rel="noopener">Falar no WhatsApp</a>
     </div>
   </div>
@@ -476,7 +481,7 @@ def home_section(posts: list[Post]) -> str:
     <div class="center">
       <span class="eyebrow eyebrow--dark">Blog</span>
       <h2>Contabilidade explicada para quem decide</h2>
-      <p class="lead">Reforma Tributária, Simples Nacional, prazos e Imposto de Renda — o que mudou e o que fazer, em linguagem de dono de empresa.</p>
+      <p class="lead">Reforma Tributária, Simples Nacional, prazos e Imposto de Renda: o que mudou e o que fazer, em linguagem de dono de empresa.</p>
     </div>
     <div class="post-grid" style="margin-top:44px">
 {cards}
@@ -564,7 +569,7 @@ def build(incluir_rascunhos: bool = False) -> list[Post]:
 
     for path, content in listing_pages(
             posts, "/blog/", "Contabilidade <em>sem complicação</em>",
-            "Reforma Tributária, Simples Nacional, prazos e Imposto de Renda — o que mudou e o que fazer.",
+            "Reforma Tributária, Simples Nacional, prazos e Imposto de Renda: o que mudou e o que fazer.",
             None, contagem).items():
         write(path, content)
 

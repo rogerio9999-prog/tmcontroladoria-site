@@ -6,7 +6,7 @@ categoria: Reforma Tributária
 tags: [Reforma Tributária, CBS, IBS, Simples Nacional, crédito tributário, LC 214/2025]
 fontes:
   - Emenda Constitucional nº 132/2023 | https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm
-  - Lei Complementar nº 214/2025 — institui o IBS e a CBS | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm
+  - Lei Complementar nº 214/2025: institui o IBS e a CBS | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm
   - Lei Complementar nº 123/2006 (Simples Nacional) | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm
 checagem:
   - Confirmar as janelas de opção (abril e setembro) e a regra específica para o ano de 2027
@@ -21,7 +21,7 @@ Parece um detalhe técnico. Para quem vende para outras empresas, é uma decisã
 
 No novo sistema, IBS e CBS são **não cumulativos**: quem compra de uma empresa no regime regular aproveita como crédito o imposto destacado na nota.
 
-O problema é que, quando o fornecedor é do Simples e recolhe tudo pelo DAS, o crédito que ele transfere ao cliente é **apenas a parcela de IBS/CBS embutida no DAS** — bem menor que a de um fornecedor no regime regular.
+O problema é que, quando o fornecedor é do Simples e recolhe tudo pelo DAS, o crédito que ele transfere ao cliente é **apenas a parcela de IBS/CBS embutida no DAS**, bem menor que a de um fornecedor no regime regular.
 
 Na prática, para o seu cliente:
 
@@ -30,7 +30,7 @@ Na prática, para o seu cliente:
 | Você no Simples, tudo no DAS | pequeno (a fração de IBS/CBS dentro do DAS) |
 | Você no Simples, com IBS/CBS pelo regime regular | integral (o IBS/CBS destacado na nota) |
 
-Se o seu concorrente gera crédito cheio e você não, o seu produto fica **mais caro para o cliente** — mesmo com o mesmo preço na nota.
+Se o seu concorrente gera crédito cheio e você não, o seu produto fica **mais caro para o cliente**, mesmo com o mesmo preço na nota.
 
 ## A opção do regime regular
 
@@ -43,7 +43,7 @@ Com a opção, a empresa:
 
 A lei prevê **janelas semestrais** para essa opção, o que significa que ela não é definitiva: dá para entrar e, se não compensar, voltar.
 
-## Quando compensa — e quando não
+## Quando compensa e quando não
 
 **Tende a compensar** para empresas que:
 
@@ -69,7 +69,7 @@ A decisão envolve, no mínimo:
 4. o efeito no **preço** que o cliente enxerga;
 5. o custo operacional: apuração mensal, escrituração e sistema de emissão preparados.
 
-Não existe resposta genérica. Existe planilha — e ela precisa ser feita antes da próxima janela de opção.
+Não existe resposta genérica. Existe planilha, e ela precisa ser feita antes da próxima janela de opção.
 
 ## Por onde começar
 

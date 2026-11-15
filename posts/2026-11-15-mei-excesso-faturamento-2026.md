@@ -13,13 +13,13 @@ checagem:
   - Confirmar prazos de comunicação de desenquadramento e a forma de recolhimento do excesso (guia gerada na DASN-SIMEI)
 ---
 
-Novembro é o mês em que muito MEI faz a conta do ano e leva um susto: o faturamento passou de **R$ 81 mil**. A boa notícia é que ultrapassar o limite não é irregularidade — é sinal de que o negócio cresceu. A má notícia é que o **tamanho do excesso** define quanto isso vai custar, e decisões tomadas agora ainda fazem diferença.
+Novembro é o mês em que muito MEI faz a conta do ano e leva um susto: o faturamento passou de **R$ 81 mil**. A boa notícia é que ultrapassar o limite não é irregularidade. É sinal de que o negócio cresceu. A má notícia é que o **tamanho do excesso** define quanto isso vai custar, e decisões tomadas agora ainda fazem diferença.
 
 ## Primeiro, confirme o seu limite
 
 O limite anual do MEI é de **R$ 81 mil**. Para quem abriu o MEI em 2026, o limite é **proporcional**: R$ 6.750 por mês de atividade, contando o mês de abertura. Quem abriu em julho, por exemplo, tem limite de R$ 40.500 para 2026.
 
-O que conta é o **faturamento bruto** — tudo o que entrou com as vendas e serviços, e não o lucro.
+O que conta é o **faturamento bruto**, ou seja, tudo o que entrou com as vendas e serviços, e não o lucro.
 
 ## Cenário 1: excesso de até 20%
 
@@ -46,7 +46,7 @@ Dependendo da atividade, a diferença pode chegar a milhares de reais.
 ## O que fazer agora, em novembro
 
 1. **Some o faturamento real de janeiro a outubro**, incluindo vendas sem nota. A Receita cruza dados de maquininhas, Pix e notas emitidas pelos seus clientes.
-2. **Projete novembro e dezembro.** Se a soma vai ficar perto de R$ 97.200, o planejamento das vendas de fim de ano importa — mas sem omitir receita: faturamento omitido é o pior cenário possível.
+2. **Projete novembro e dezembro.** Se a soma vai ficar perto de R$ 97.200, o planejamento das vendas de fim de ano importa, mas sem omitir receita: faturamento omitido é o pior cenário possível.
 3. **Se já passou de 20%, comunique o quanto antes.** A comunicação espontânea e o recolhimento antes de uma fiscalização reduzem multas.
 4. **Prepare a vida de ME.** Microempresa tem contabilidade obrigatória, pode precisar de funcionário registrado com folha completa e tem obrigações que o MEI não tem. Também passa a poder **ter sócios** e faturar até R$ 4,8 milhões.
 
