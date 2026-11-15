@@ -563,6 +563,9 @@ def build(incluir_rascunhos: bool = False) -> list[Post]:
             (OUT / name).write_text(with_base(conteudo), encoding="utf-8")
         else:
             shutil.copy2(src, OUT / name)
+    # Arquivos de verificação (Google Search Console, Bing etc.) copiados sem alteração
+    for src in list(ROOT.glob("google*.html")) + list(ROOT.glob("BingSiteAuth.xml")):
+        shutil.copy2(src, OUT / src.name)
 
     contagem = {c: sum(1 for p in posts if p.categoria == c) for c in CATEGORIES}
     listados = ["/", "/parceiros.html", "/blog/"]
