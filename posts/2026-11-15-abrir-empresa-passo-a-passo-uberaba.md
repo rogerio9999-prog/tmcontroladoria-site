@@ -6,11 +6,11 @@ categoria: Gestão e Controladoria
 tags: [abertura de empresa, CNPJ, Uberaba, Simples Nacional, alvará, Redesim]
 fontes:
   - Lei Complementar nº 123/2006 | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm
-  - Redesim — Portal Gov.br Empresas e Negócios | https://www.gov.br/empresas-e-negocios/pt-br/redesim
-  - Receita Federal — CNPJ | https://www.gov.br/receitafederal/pt-br
-  - Portal do Simples Nacional — Receita Federal | https://www8.receita.fazenda.gov.br/simplesnacional/
+  - Redesim: Portal Gov.br Empresas e Negócios | https://www.gov.br/empresas-e-negocios/pt-br/redesim
+  - Receita Federal: CNPJ | https://www.gov.br/receitafederal/pt-br
+  - Portal do Simples Nacional: Receita Federal | https://www8.receita.fazenda.gov.br/simplesnacional/
   - Junta Comercial do Estado de Minas Gerais (JUCEMG) | https://jucemg.mg.gov.br/
-  - Código Civil — Lei nº 10.406/2002 | https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm
+  - Código Civil: Lei nº 10.406/2002 | https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm
 checagem:
   - Confirmar o fluxo atual de abertura em Minas Gerais (Redesim/JUCEMG) e se a licença de funcionamento e o alvará de Uberaba são emitidos de forma integrada ou em etapas separadas
   - Confirmar que a Sociedade Limitada Unipessoal (SLU) pode ser aberta por uma pessoa sem capital mínimo, conforme o Código Civil (art. 1.052, § 1º)

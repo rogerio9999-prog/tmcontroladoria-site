@@ -5,8 +5,8 @@ data: 2026-11-15
 categoria: Simples Nacional
 tags: [Simples Nacional, CGSN, regime regular IBS CBS, 2027, opção]
 fontes:
-  - Portal do Simples Nacional — Receita Federal | https://www8.receita.fazenda.gov.br/simplesnacional/
-  - Resolução CGSN nº 186/2026 (opção 2027) e alterações — Portal do Simples Nacional, legislação | https://www8.receita.fazenda.gov.br/simplesnacional/legislacao/
+  - Portal do Simples Nacional: Receita Federal | https://www8.receita.fazenda.gov.br/simplesnacional/
+  - Resolução CGSN nº 186/2026 (opção 2027) e alterações: Portal do Simples Nacional, legislação | https://www8.receita.fazenda.gov.br/simplesnacional/legislacao/
   - Lei Complementar nº 123/2006 | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm
 checagem:
   - Confirmar no texto oficial da Resolução CGSN nº 194/2026 (DOU de 28/09/2026) que a janela de cancelamento vai de 03/11/2026 a 20/12/2026

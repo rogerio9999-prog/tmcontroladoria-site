@@ -5,9 +5,9 @@ data: 2026-11-15
 categoria: Reforma Tributária
 tags: [IBS, CBS, crédito, não cumulatividade, precificação]
 fontes:
-  - Lei Complementar nº 214/2025 — regulamenta IBS, CBS e Imposto Seletivo | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm
+  - Lei Complementar nº 214/2025: regulamenta IBS, CBS e Imposto Seletivo | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm
   - Emenda Constitucional nº 132/2023 | https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm
-  - Reforma Tributária do Consumo — Ministério da Fazenda | https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria
+  - Reforma Tributária do Consumo: Ministério da Fazenda | https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria
 checagem:
   - A alíquota de 25% do exemplo é HIPOTÉTICA, adotada só para facilitar a conta; confirmar que o texto deixa isso claro e não sugere alíquota real
   - Confirmar que o crédito de IBS e CBS é amplo (sobre bens e serviços usados na atividade), salvo exceções de uso e consumo pessoal, conforme a LC 214/2025

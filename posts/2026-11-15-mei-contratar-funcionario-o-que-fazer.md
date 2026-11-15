@@ -6,9 +6,9 @@ categoria: MEI
 tags: [MEI, funcionário, eSocial, FGTS, contratação]
 fontes:
   - Lei Complementar nº 123/2006 (art. 18-C) | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm
-  - Portal do Empreendedor — MEI | https://www.gov.br/empresas-e-negocios/pt-br/empreendedor
-  - eSocial — Empregador MEI | https://www.gov.br/esocial/pt-br
-  - FGTS Digital — Ministério do Trabalho e Emprego | https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital
+  - Portal do Empreendedor: MEI | https://www.gov.br/empresas-e-negocios/pt-br/empreendedor
+  - eSocial: Empregador MEI | https://www.gov.br/esocial/pt-br
+  - FGTS Digital: Ministério do Trabalho e Emprego | https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital
 checagem:
   - Confirmar que o MEI pode ter um único empregado que receba um salário mínimo ou o piso da categoria, conforme o art. 18-C da LC 123/2006
   - Confirmar que a contribuição previdenciária do MEI sobre o empregado é de 3% da remuneração, mais 8% de FGTS, e que o empregado contribui com a alíquota própria

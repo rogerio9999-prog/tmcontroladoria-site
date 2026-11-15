@@ -5,11 +5,11 @@ data: 2026-11-15
 categoria: Prazos e Agenda
 tags: [prazos, DAS, 13º salário, carnê-leão, feriado, agenda fiscal]
 fontes:
-  - Portal do Simples Nacional — Receita Federal | https://www8.receita.fazenda.gov.br/simplesnacional/
-  - Lei nº 14.759/2023 — Dia Nacional de Zumbi e da Consciência Negra | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14759.htm
-  - Lei nº 4.749/1965 — pagamento do 13º salário | https://www.planalto.gov.br/ccivil_03/leis/l4749.htm
-  - FGTS Digital — Ministério do Trabalho e Emprego | https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital
-  - Receita Federal — Carnê-Leão | https://www.gov.br/receitafederal/pt-br
+  - Portal do Simples Nacional: Receita Federal | https://www8.receita.fazenda.gov.br/simplesnacional/
+  - Lei nº 14.759/2023: Dia Nacional de Zumbi e da Consciência Negra | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14759.htm
+  - Lei nº 4.749/1965: pagamento do 13º salário | https://www.planalto.gov.br/ccivil_03/leis/l4749.htm
+  - FGTS Digital: Ministério do Trabalho e Emprego | https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital
+  - Receita Federal: Carnê-Leão | https://www.gov.br/receitafederal/pt-br
 checagem:
   - Confirmar que 20/11/2026 é feriado nacional pela Lei nº 14.759/2023 e que não há decisão local de Uberaba que mude o expediente bancário
   - Confirmar que o DAS (competência outubro) tem vencimento prorrogado para segunda, 23/11/2026
