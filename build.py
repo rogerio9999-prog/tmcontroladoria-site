@@ -38,6 +38,17 @@ WHATSAPP = "https://wa.me/553433253919"
 POSTS_PER_PAGE = 12
 BRT = timezone(timedelta(hours=-3))
 
+# Ícones e imagem de compartilhamento (WhatsApp, LinkedIn, Facebook, Google). Ficam em assets/.
+OG_IMAGE = SITE_URL + "/assets/og-image.png"
+HEAD_EXTRA = f"""<meta property="og:image" content="{OG_IMAGE}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TM Controladoria e Soluções Contábeis">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/icon-512.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">"""
+
 CATEGORIES = {
     "Reforma Tributária": "reforma-tributaria",
     "Simples Nacional": "simples-nacional",
@@ -290,6 +301,7 @@ def page(*, title: str, description: str, path: str, body: str, og_type: str = "
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="{SITE_NAME}">
+{HEAD_EXTRA}
 <link rel="alternate" type="application/rss+xml" title="Blog TM Controladoria" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -417,7 +429,9 @@ def post_page(p: Post, relacionados: list[Post]) -> str:
         "articleSection": p.categoria,
         "keywords": ", ".join(p.tags),
         "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
-        "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
+        "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL,
+                      "logo": {"@type": "ImageObject", "url": SITE_URL + "/assets/icon-512.png"}},
+        "image": OG_IMAGE,
     }
     extra = (f'<meta property="article:published_time" content="{p.data.isoformat()}">\n'
              f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>')
@@ -563,6 +577,8 @@ def build(incluir_rascunhos: bool = False) -> list[Post]:
             (OUT / name).write_text(with_base(conteudo), encoding="utf-8")
         else:
             shutil.copy2(src, OUT / name)
+    shutil.copytree(ROOT / "assets", OUT / "assets")
+    shutil.copy2(ROOT / "assets" / "favicon.ico", OUT / "favicon.ico")
     # Arquivos de verificação (Google Search Console, Bing etc.) copiados sem alteração
     for src in list(ROOT.glob("google*.html")) + list(ROOT.glob("BingSiteAuth.xml")):
         shutil.copy2(src, OUT / src.name)
