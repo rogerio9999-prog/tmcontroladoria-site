@@ -26,6 +26,7 @@ Esta quinzena tem uma armadilha de calendário: **sexta-feira, 20 de novembro de
 |---|---|---|
 | Segunda, 16/11 | Obrigações com vencimento no dia 15 (domingo e feriado) | Confirme a regra de cada obrigação: DCTFWeb e EFD-Reinf de outubro |
 | Quinta, 19/11 | Possível data-limite do FGTS Digital | O dia 20 é feriado; confirme se a guia é antecipada ou prorrogada |
+| Quinta, 19/11 | **DARF de INSS e IRRF** da folha de outubro (empresas fora do Simples ou com retenções) | Vencem no dia 20 e, sem expediente, são antecipados |
 | Sexta, 20/11 | **Feriado nacional** | Bancos fechados |
 | Segunda, 23/11 | **DAS** de outubro (Simples Nacional e MEI) | Vencimento do dia 20 prorrogado para o dia útil seguinte |
 | Segunda, 30/11 | **1ª parcela do 13º salário** | Ou parcela única, se for o caso |

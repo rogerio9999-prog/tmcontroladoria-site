@@ -32,7 +32,7 @@ Além do DAS-MEI de todo mês, entram:
 - **Desconto do empregado:** o INSS do próprio empregado é descontado do salário dele, conforme a tabela vigente.
 - **Férias, 13º e rescisão**, provisionados ao longo do ano.
 
-> **Exemplo (valores hipotéticos):** salário de R$ 2.000. O MEI recolhe 3% = R$ 60 de contribuição previdenciária e 8% = R$ 160 de FGTS. Fora o salário, são **R$ 220 por mês**, mais a provisão de férias (com o terço constitucional) e de 13º, que somam mais de 16% sobre o salário. O custo real é bem maior do que o valor do holerite.
+> **Exemplo (valores hipotéticos):** salário de R$ 2.000. O MEI recolhe 3% = R$ 60 de contribuição previdenciária e 8% = R$ 160 de FGTS. Fora o salário, são **R$ 220 por mês**, mais a provisão de férias (com o terço constitucional) e de 13º, que somam cerca de 19,4% sobre o salário (e sobre elas também incidem FGTS e a contribuição de 3%). O custo real é bem maior do que o valor do holerite.
 
 ## Passo a passo no primeiro mês
 

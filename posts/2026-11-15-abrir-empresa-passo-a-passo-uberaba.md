@@ -52,7 +52,7 @@ Os regimes mais comuns:
 - **Lucro Presumido:** a base de cálculo é uma margem presumida sobre a receita; costuma ser mais vantajoso quando a margem real é alta.
 - **Lucro Real:** apurado sobre o lucro contábil; exigido em alguns casos.
 
-Em serviços, o [Fator R](/blog/fator-r-simples-nacional/) pode mudar bastante o imposto. Um exemplo ilustrativo: uma empresa de serviços com faturamento de R$ 20.000 por mês e alíquota efetiva de 6% no Anexo III paga R$ 1.200 de DAS; se cair no Anexo V, a mesma receita pode custar bem mais. Por isso o regime deve ser decidido **com a simulação em mãos**, não por palpite.
+Em serviços, o [Fator R](/blog/fator-r-simples-nacional/) pode mudar bastante o imposto. Um exemplo ilustrativo: uma empresa de serviços com faturamento de R$ 15.000 por mês (R$ 180 mil em 12 meses, primeira faixa) paga 6% no Anexo III, ou R$ 900 de DAS; se cair no Anexo V, a mesma receita pode custar bem mais. Por isso o regime deve ser decidido **com a simulação em mãos**, não por palpite.
 
 ## 4. Registre na Junta Comercial e na Receita
 
