@@ -28,6 +28,9 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python build.py
+        env:
+          # Endereço provisório (github.io/tmcontroladoria-site). Remover quando o domínio próprio for ligado.
+          BASE_PATH: /tmcontroladoria-site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

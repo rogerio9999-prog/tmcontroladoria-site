@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import re
 import shutil
 import sys
@@ -522,11 +523,24 @@ def sitemap(posts: list[Post], paths: list[str]) -> str:
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n")
 
 
+# Subpasta de publicação (ex.: "/tmcontroladoria-site" no endereço provisório do GitHub Pages).
+# Vazio quando o site está na raiz do domínio próprio.
+BASE_PATH = os.environ.get("BASE_PATH", "").rstrip("/")
+
+
+def with_base(content: str) -> str:
+    if not BASE_PATH:
+        return content
+    return re.sub(r'(href|src)="/(?!/)', rf'\1="{BASE_PATH}/', content)
+
+
 def write(path: str, content: str) -> None:
     target = OUT / path.lstrip("/")
     if path.endswith("/"):
         target = target / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
+    if target.suffix == ".html":
+        content = with_base(content)
     target.write_text(content, encoding="utf-8")
 
 
@@ -541,7 +555,7 @@ def build(incluir_rascunhos: bool = False) -> list[Post]:
         src = ROOT / name
         if name == "index.html":
             conteudo = src.read_text(encoding="utf-8").replace("<!-- BLOG:ULTIMOS -->", home_section(posts))
-            (OUT / name).write_text(conteudo, encoding="utf-8")
+            (OUT / name).write_text(with_base(conteudo), encoding="utf-8")
         else:
             shutil.copy2(src, OUT / name)
 
