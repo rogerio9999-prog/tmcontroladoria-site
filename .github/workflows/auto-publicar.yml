@@ -1,8 +1,8 @@
 # Publicação automática ao meio-dia (Brasília).
 # Faz o merge dos Pull Requests de posts (branches "posts/...") que:
 #   - não estão marcados com a etiqueta "segurar";
-#   - não estão como rascunho (draft);
 #   - passaram na validação ("Validar posts").
+# PRs abertos como "Draft" pela rotina são marcados como prontos antes do merge.
 # Depois dispara o deploy do site.
 # Para barrar um PR: coloque a etiqueta "segurar" nele, ou feche-o.
 # Posts com "rascunho: true" entram no repositório mas NÃO aparecem no site.
@@ -29,8 +29,8 @@ jobs:
         run: |
           set -uo pipefail
           publicou=0
-          prs=$(gh pr list --state open --limit 50 --json number,headRefName,isDraft,labels \
-            --jq '.[] | select(.headRefName | startswith("posts/")) | select(.isDraft | not)
+          prs=$(gh pr list --state open --limit 50 --json number,headRefName,labels \
+            --jq '.[] | select(.headRefName | startswith("posts/"))
                   | select([.labels[].name] | index("segurar") | not) | .number')
           if [ -z "$prs" ]; then
             echo "Nenhum PR de posts para publicar."
@@ -43,6 +43,7 @@ jobs:
               gh pr comment "$n" --body "⚠️ Publicação automática do meio-dia **não** feita: a validação dos posts está como \`$validacao\`. Corrija e faça o merge manualmente." || true
               continue
             fi
+            gh pr ready "$n" 2>/dev/null || true
             if gh pr merge "$n" --squash --delete-branch; then
               echo "PR #$n publicado."
               publicou=1
