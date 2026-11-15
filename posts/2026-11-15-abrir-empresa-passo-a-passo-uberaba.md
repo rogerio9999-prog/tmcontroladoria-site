@@ -79,7 +79,7 @@ A exigência varia por atividade e endereço. Confirme antes de assinar o contra
 
 ## 6. Opte pelo Simples Nacional no prazo
 
-Empresa nova tem **prazo curto para optar pelo Simples** depois da inscrição no CNPJ, em geral 30 dias. Perdeu o prazo? Só em janeiro do ano seguinte. Em um caso assim, a empresa pode ficar um ano inteiro no regime mais caro.
+Empresa nova tem **prazo curto para optar pelo Simples** depois da inscrição no CNPJ, em geral 30 dias. Perdeu o prazo? Só na próxima janela de opção, que normalmente é em janeiro, mas para 2027 foi antecipada para o segundo semestre de 2026 por causa da Reforma Tributária. Em um caso assim, a empresa pode ficar um ano inteiro no regime mais caro.
 
 ## 7. Prepare-se para emitir nota
 

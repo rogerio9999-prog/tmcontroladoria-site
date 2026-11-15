@@ -2,6 +2,7 @@
 titulo: "O que vence até 30 de novembro de 2026: DAS, 13º, carnê-leão e o feriado do dia 20"
 resumo: O dia 20 de novembro de 2026 cai numa sexta-feira e é feriado nacional. Veja a agenda até 30/11, com as datas ajustadas, para não pagar multa por contar o prazo errado.
 data: 2026-11-15
+atualizado: 2026-11-15
 categoria: Prazos e Agenda
 tags: [prazos, DAS, 13º salário, carnê-leão, feriado, agenda fiscal]
 fontes:
@@ -14,7 +15,7 @@ checagem:
   - Confirmar que 20/11/2026 é feriado nacional pela Lei nº 14.759/2023 e que não há decisão local de Uberaba que mude o expediente bancário
   - Confirmar que o DAS (competência outubro) tem vencimento prorrogado para segunda, 23/11/2026
   - Confirmar a regra do FGTS Digital quando o dia 20 não é dia útil (antecipação para quinta, 19/11, ou prorrogação) e o vencimento exato da guia mensal
-  - Confirmar o vencimento da DCTFWeb e da EFD-Reinf de outubro, considerando que 15/11/2026 é domingo e feriado da Proclamação da República
+  - Confirmar a prorrogação da EFD-Reinf de outubro para 16/11 e a entrega da DCTFWeb até 30/11 (último dia útil do mês seguinte)
   - Confirmar que o carnê-leão de outubro vence no último dia útil de novembro (segunda, 30/11/2026)
 ---
 
@@ -24,13 +25,14 @@ Esta quinzena tem uma armadilha de calendário: **sexta-feira, 20 de novembro de
 
 | Data | O que | Observação |
 |---|---|---|
-| Segunda, 16/11 | Obrigações com vencimento no dia 15 (domingo e feriado) | Confirme a regra de cada obrigação: DCTFWeb e EFD-Reinf de outubro |
+| Segunda, 16/11 | **EFD-Reinf** de outubro | Vence no dia 15, que caiu em domingo e feriado |
 | Quinta, 19/11 | Possível data-limite do FGTS Digital | O dia 20 é feriado; confirme se a guia é antecipada ou prorrogada |
 | Quinta, 19/11 | **DARF de INSS e IRRF** da folha de outubro (empresas fora do Simples ou com retenções) | Vencem no dia 20 e, sem expediente, são antecipados |
 | Sexta, 20/11 | **Feriado nacional** | Bancos fechados |
 | Segunda, 23/11 | **DAS** de outubro (Simples Nacional e MEI) | Vencimento do dia 20 prorrogado para o dia útil seguinte |
 | Segunda, 30/11 | **1ª parcela do 13º salário** | Ou parcela única, se for o caso |
 | Segunda, 30/11 | **Carnê-leão** de outubro | Quem recebeu de pessoa física ou do exterior |
+| Segunda, 30/11 | **DCTFWeb** de outubro | Entrega até o último dia útil do mês seguinte (veja [DCTFWeb: o que é e qual o prazo](/blog/dctfweb-o-que-e-prazo/)) |
 
 ## DAS e DAS-MEI: segunda, 23/11
 
