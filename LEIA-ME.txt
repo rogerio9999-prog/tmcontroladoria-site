@@ -1,0 +1,96 @@
+TM CONTROLADORIA E SOLUÇÕES CONTÁBEIS — SITE
+=============================================
+
+ARQUIVOS
+  index.html      Página principal (one-page com âncoras)
+  parceiros.html  Subpágina de parceiros (AC&FT e Teixeira & Morais)
+  styles.css      Folha de estilos compartilhada
+  blog.css        Estilos do blog
+  posts/          Artigos do blog, um arquivo .md por post
+  build.py        Gera o site completo (com o blog) na pasta _site/
+  CLAUDE.md       Formato dos posts e guia editorial da rotina diária
+  LEIA-ME.txt     Este arquivo
+
+COMO VISUALIZAR
+  Com o blog, o site passou a ser gerado. Uma vez só, instale:
+      python -m pip install -r requirements.txt
+  Depois, para gerar e abrir em http://localhost:8000 :
+      python build.py --serve
+  A pasta _site/ é o que vai para a hospedagem. Não edite nada dentro dela.
+
+BLOG
+  Cada post é um arquivo em posts/ (formato descrito em CLAUDE.md).
+  Os posts novos chegam como Pull Request no GitHub. Revise, aprove e
+  faça o merge: o site é publicado sozinho em cerca de 1 minuto.
+  O campo "checagem" de cada post lista o que precisa ser conferido;
+  ele não aparece no site.
+
+O QUE PRECISA SER SUBSTITUÍDO ANTES DE PUBLICAR
+
+  JÁ PREENCHIDO
+    Telefone e WhatsApp .... (34) 3325-3919  ->  wa.me/553433253919
+    E-mail ................. contabilidade@tmcontroladoria.com.br
+    Endereço ............... Praça Rui Barbosa, 300 - Sala 30
+                             Uberaba/MG
+
+  AINDA FALTA (destacados em amarelo no rodapé)
+    [CNPJ]     CNPJ da empresa
+    [CRC/MG]   registro no CRC-MG
+
+  Para tirar o destaque amarelo depois de preencher, troque
+      <span class="ph">texto</span>
+  por apenas
+      texto
+
+  OPCIONAL: incluir o CEP no endereço e no bloco JSON-LD do index.html
+  (campo "postalCode") melhora o resultado no Google Meu Negócio.
+
+RESPONSIVIDADE
+  Testado sem rolagem horizontal em 320, 360, 390, 414, 600, 768, 900,
+  1024 e 1440 px, nas duas páginas.
+
+  Breakpoints:
+    900px  menu vira hambúrguer (inclui Contato e botão de WhatsApp)
+    980px  grades de 3 e 4 colunas passam a 2
+    760px  layout de coluna única, botões de largura total
+    400px  logotipo reduz para "TM." e o botão flutuante vira ícone
+
+PUBLICAÇÃO
+  Automática pelo GitHub Pages (.github/workflows/deploy.yml) a cada
+  merge na branch main e todo dia às 06:00. Para hospedar em outro lugar,
+  rode python build.py e suba o conteúdo de _site/.
+
+PALETA
+  FAIXAS VERDES (cabeçalho, hero, seção da Reforma e rodapé) - inalteradas
+    Verde escuro   #1D5C3A
+    Verde profundo #256E47
+    Verde médio    #379B65
+    Verde vivo     #4CC781
+    Verde CTA      #1B8248
+    Dourado        #DCBE78 / #F6E2B4
+
+  ÁREAS CLARAS (o corpo da página) - aliviadas para um visual clean
+    Fundo suave    #FBFDFC  (praticamente branco)
+    Fundo menta    #F4FAF6
+    Texto          #1F2933
+    Texto de apoio #5B6B7B
+    Bordas         rgba(31,41,51,.09)
+    Sombra         quase imperceptível, dupla camada
+
+  Tipografia  Playfair Display (títulos) + DM Sans (texto)
+
+  Todas as cores são variáveis CSS no topo de styles.css (bloco :root).
+  As faixas verdes e as áreas claras são grupos separados, então dá para
+  ajustar um sem mexer no outro.
+
+MARCA
+  O logotipo usa o nome completo: "TM." em serifada, seguido de
+  "CONTROLADORIA E SOLUÇÕES CONTÁBEIS" em duas linhas.
+  Abaixo de 400px de largura a segunda parte é ocultada e fica só "TM.".
+
+OBSERVAÇÃO SOBRE CONTEÚDO
+  Os textos sobre a Reforma Tributária refletem o cronograma da EC 132/2023
+  e da LC 214/2025 (2026 ano-teste, 2027 CBS plena, 2029-2032 transição do
+  IBS, 2033 sistema pleno) e a obrigatoriedade dos campos de IBS/CBS na
+  NF-e a partir de 03/08/2026. Revise antes de publicar, pois regras de
+  transição ainda podem sofrer ajustes.
