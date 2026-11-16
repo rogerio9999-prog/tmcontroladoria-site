@@ -82,13 +82,13 @@ Os posts são **publicados automaticamente ao meio-dia** se ninguém intervier. 
 3. Confira que cada link em `fontes` abre (WebFetch) e trata do assunto citado.
 4. Classifique o que sobrou em `checagem`:
    - **Detalhe menor** (ex.: confirmar link alternativo, redação): o post segue normalmente.
-   - **Dúvida relevante** (um número, prazo, regra ou alcance da norma que você não conseguiu confirmar e que pode levar o leitor a erro): marque o post com `rascunho: true`. Ele entra no repositório mas **não aparece no site** até um humano liberar.
+   - **Dúvida relevante** (um número, prazo, regra ou alcance da norma que você não conseguiu confirmar e que pode levar o leitor a erro): **não use `rascunho: true`**. Todos os 5 posts devem ir ao ar no horário. Reescreva o trecho para que ele não dependa da informação não confirmada (explique a regra de forma geral, sem o número, e oriente o leitor a confirmar com o contador) ou retire o trecho. Se o post inteiro depender dela, troque o tema por outro da mesma linha editorial que você consiga confirmar. Registre o ponto em `checagem`.
 
-Prefira publicar 4 posts sólidos e 1 rascunho a publicar 5 com erro.
+Os posts da rotina diária nunca são marcados como rascunho: prefira um texto mais geral e correto a um texto específico e duvidoso.
 
 ### Pull Request
 
-Título: `Posts de DD/MM/AAAA`. No corpo, para cada post: título, linha editorial, resumo em uma frase, se está **PUBLICÁVEL** ou **RASCUNHO** (e por quê) e a lista `checagem` copiada do arquivo, para o revisor ir direto aos pontos de risco.
+Título: `Posts de DD/MM/AAAA`. No corpo, para cada post: título, linha editorial, resumo em uma frase, os pontos que foram reescritos de forma geral por falta de confirmação, se houver, e a lista `checagem` copiada do arquivo, para o revisor ir direto aos pontos de risco.
 
 ### Publicação automática
 
