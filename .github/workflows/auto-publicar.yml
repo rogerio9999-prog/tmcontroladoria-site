@@ -10,7 +10,9 @@ name: Publicar posts ao meio-dia
 
 on:
   schedule:
-    - cron: "0 15 * * *"   # 15:00 UTC = 12:00 em Brasília
+    # Minutos "quebrados": o GitHub atrasa ou pula agendamentos na virada da hora.
+    - cron: "47 14 * * *"  # 14:47 UTC = 11:47 em Brasília
+    - cron: "53 15 * * *"  # 15:53 UTC = 12:53 em Brasília (segunda tentativa, se a primeira não rodar)
   workflow_dispatch:
 
 permissions:
