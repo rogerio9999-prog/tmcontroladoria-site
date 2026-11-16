@@ -92,4 +92,4 @@ Título: `Posts de DD/MM/AAAA`. No corpo, para cada post: título, linha editori
 
 ### Publicação automática
 
-`.github/workflows/auto-publicar.yml` faz o merge dos PRs `posts/...` todo dia às 12:00 (Brasília), exceto os marcados com a etiqueta `segurar`, os fechados e os que falharam na validação. Posts com `rascunho: true` não aparecem no site; para liberar um, edite o arquivo e mude para `rascunho: false`.
+`.github/workflows/auto-publicar.yml` faz o merge dos PRs `posts/...` todo dia por volta do meio-dia (11:47 de Brasília, com segunda tentativa às 12:53), exceto os marcados com a etiqueta `segurar`, os fechados e os que falharam na validação. Posts com `rascunho: true` não aparecem no site; para liberar um, edite o arquivo e mude para `rascunho: false`.
